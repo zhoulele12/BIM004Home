@@ -43,7 +43,7 @@ Knob strength is the main bottle neck
 ## Modifications:
 To further increase strength -> shorten knob, change shape to fit better (add circle, wider, longer)
 decrease base height by 1mm.
-------------------------------------------------------------------------------------------------------------------
+
 After printing the same design with the same parameters at different printers, conclusion reached -> **PRINTER MATTERS**
 
 ## Circular Knob Design
@@ -60,4 +60,5 @@ Further steps to take:
 2. diameter 5, length 7.8, width 2.5 - X
 3. diameter 5.5, length 8, wdith 2.7 - X
 4. diameter 4.7, length 7.7, width 2.4, base 4->5, knob 5->3 - X (knob too short, base still too short)
-5. diameter 4.5, length 7.5, width 2.2, base 5->6, knob 5
+5. diameter 4.5, length 7.5, width 2.2, base 6, 7, 8, knob 5 - teeth magically fit better. 6 is the best. Knob can be enlarged.
+6. diameter 4.75,5, length 7.5, width 2.5,(multiples of 0.25) base 6, knob 5
