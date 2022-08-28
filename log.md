@@ -54,4 +54,10 @@ Further steps to take:
 2. Tweak base height for larger friction
 3. Curved surface for larger friction
 4. Try thinner layers and higher infill density
-  
+
+## Tests
+1. diameter 4.5, length 7.5, width 2.2
+2. diameter 5, length 7.8, width 2.5 - X
+3. diameter 5.5, length 8, wdith 2.7 - X
+4. diameter 4.7, length 7.7, width 2.4, base 4->5, knob 5->3 - X (knob too short, base still too short)
+5. diameter 4.5, length 7.5, width 2.2, base 5->6, knob 5
