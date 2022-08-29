@@ -67,4 +67,5 @@ Further steps to take:
 - Finished the code for new fingerprint lock, with a rocker switch
 - Facing a few problems
 1. Superglue not strong enough to hold servo. Solution: design a box and glue the box onto our door.
-2. Strength of knob may be questionable. -> curved surface near where the knob connects the base.
+2. Reconsider fingerprint sensor location.
+3. Strength of knob may be questionable. -> curved surface near where the knob connects the base.
