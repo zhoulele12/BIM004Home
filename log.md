@@ -58,7 +58,13 @@ Further steps to take:
 ## Tests
 1. diameter 4.5, length 7.5, width 2.2
 2. diameter 5, length 7.8, width 2.5 - X
-3. diameter 5.5, length 8, wdith 2.7 - X
+3. diameter 5.5, length 8, wdith 2.7 - X	
 4. diameter 4.7, length 7.7, width 2.4, base 4->5, knob 5->3 - X (knob too short, base still too short)
 5. diameter 4.5, length 7.5, width 2.2, base 6, 7, 8, knob 5 - teeth magically fit better. 6 is the best. Knob can be enlarged.
-6. diameter 4.75,5, length 7.5, width 2.5,(multiples of 0.25) base 6, knob 5
+6. diameter 4.75,5, length 7.5, width 2.5,(multiples of 0.25) base 6, knob 5 - diameter 5 is stuck in the hole. -> Let's use this!
+
+## August 28th 2022
+- Finished the code for new fingerprint lock, with a rocker switch
+- Facing a few problems
+1. Superglue not strong enough to hold servo. Solution: design a box and glue the box onto our door.
+2. Strength of knob may be questionable. -> curved surface near where the knob connects the base.
