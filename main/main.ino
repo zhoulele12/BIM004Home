@@ -3,8 +3,12 @@
 SoftwareSerial mySerial(2, 3);
 Servo myServo;
 int servoPin = 9;
+int buttonPin = 4; 
 Adafruit_Fingerprint finger = Adafruit_Fingerprint(&mySerial);
-
+int prevButton = 0;
+int buttonState = 0;
+int lockState = 0;
+int prevLock = 0;
 void setup()
 {
   Serial.begin(9600);
@@ -13,13 +17,43 @@ void setup()
   if (finger.verifyPassword()){
     Serial.println("Found fingerprint sensor!");
   }
+  pinMode(buttonPin,INPUT_PULLUP);
+  //0 is open, 1 is closed
+  
 }
 
 void loop()                     // run over and over again
 {
   getFingerprintID();
+  button();
+  checkLockState();
   delay(50);
 }
+
+void button() {
+  buttonState = digitalRead(buttonPin);
+  if(buttonState!=prevButton){
+    myServo.attach(9);
+    if(buttonState==1){
+      myServo.write(0);
+    } else{
+      myServo.write(60);
+     }
+    delay(500);
+    myServo.detach();
+    prevButton = buttonState;
+    lockState = prevButton;
+    }
+  }
+void checkLockState(){
+  if(lockState==1){
+    finger.LEDcontrol(FINGERPRINT_LED_ON, 0, FINGERPRINT_LED_PURPLE);
+  }
+  if(lockState==0){
+    finger.LEDcontrol(FINGERPRINT_LED_OFF, 0, FINGERPRINT_LED_PURPLE);  
+  } 
+  
+  }
 
 uint8_t getFingerprintID() {
   uint8_t p = finger.getImage();
@@ -76,7 +110,7 @@ uint8_t getFingerprintID() {
   } else if (p == FINGERPRINT_NOTFOUND) {
     finger.LEDcontrol(FINGERPRINT_LED_ON, 0, FINGERPRINT_LED_RED);
     delay(1000);
-    finger.LEDcontrol(FINGERPRINT_LED_OFF, 0, FINGERPRINT_LED_RED);
+//    finger.LEDcontrol(FINGERPRINT_LED_OFF, 0, FINGERPRINT_LED_RED);
     Serial.println("Did not find a match");
     return p;
   } else {
@@ -87,13 +121,19 @@ uint8_t getFingerprintID() {
   // found a match!
   Serial.print("Found ID #"); Serial.print(finger.fingerID);
   Serial.print(" with confidence of "); Serial.println(finger.confidence);
+  
   myServo.attach(9);
-  myServo.write(60);
+  if(lockState==0){
+    myServo.write(0);
+    lockState=1;  
+  } else {
+    myServo.write(60);
+    lockState=0;
+  }
+  
   finger.LEDcontrol(FINGERPRINT_LED_BREATHING, 100, FINGERPRINT_LED_BLUE);
-  delay(3000);
-  finger.LEDcontrol(FINGERPRINT_LED_OFF, 0, FINGERPRINT_LED_BLUE);
-  myServo.write(0);
-  delay(100);
+  delay(2000);
+//  finger.LEDcontrol(FINGERPRINT_LED_OFF, 0, FINGERPRINT_LED_BLUE);
   myServo.detach();
   
   return finger.fingerID;
