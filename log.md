@@ -69,3 +69,9 @@ Further steps to take:
 1. Superglue not strong enough to hold servo. Solution: design a box and glue the box onto our door.
 2. Reconsider fingerprint sensor location.
 3. Strength of knob may be questionable. -> curved surface near where the knob connects the base.
+
+## August 29th 2022
+- Box 80% done
+1. design screw holes using the the hole function in fusion. Figure out screw types.
+2. ridges
+3. 
