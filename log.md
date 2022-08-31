@@ -74,4 +74,22 @@ Further steps to take:
 - Box 80% done
 1. design screw holes using the the hole function in fusion. Figure out screw types.
 2. ridges
-3. 
+
+print, box bottom on B7
+- pins can be longer - extended 2mm
+- rectangular hole(17) move up - up by 5mm
+- 2mm pilot hole was a brilliant guess! 
+- move screw hole 9 down - 0.1mm
+- screw hole 1 down - 0.1mm
+- screw hole 6 right - 0.1mm
+- hole 14 can be smaller - diameter decrease by 2mm
+- length/width 16 can be smaller - both decrease by 0.5mm
+- enlarged servo screw holes to 2.5mm to fit 2nd screw.
+
+## August 30th 2022
+- Modified design based on print1
+- finished ridges
+To-do
+1. Check availability of screws - I have #3,4,6 
+2. design screw holes using the the hole function in fusion. Figure out screw types.
+3. Button hole.
