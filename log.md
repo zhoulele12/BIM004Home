@@ -75,11 +75,11 @@ Further steps to take:
 1. design screw holes using the the hole function in fusion. Figure out screw types.
 2. ridges
 
-print, box bottom on B7
+print1, box bottom on B7
 - pins can be longer - extended 2mm
 - rectangular hole(17) move up - up by 5mm
 - 2mm pilot hole was a brilliant guess! 
-- move screw hole 9 down - 0.1mm
+- move screw hole 8 down - 0.1mm
 - screw hole 1 down - 0.1mm
 - screw hole 6 right - 0.1mm
 - hole 14 can be smaller - diameter decrease by 2mm
@@ -93,3 +93,18 @@ To-do
 1. Check availability of screws - I have #3,4,6 
 2. design screw holes using the the hole function in fusion. Figure out screw types.
 3. Button hole.
+
+print2, box bottom on B7
+1. pin 4 too wide - diameter reduced by 0.2mm
+2. screw hole 6 shift to the right - 0.1mm
+3. screw hole 1 shift down - 0.1mm
+4. move hole 5 up - 5mm
+5. length width 16 can be further shortened - both decrease by 0.3mm
+6. mid ridge of servo is blocking - 7*2*3mm cut
+7. screw hole 8 down and right - 0.1mm
+8. enlarge 2mm pilot holes by 0.2mm in diameter
+9. enlarge 2.5 mm pilot holes by 0.2mm in diameter
+- screw-related stuff - need to reconsider -> how to tap 3d printed material?
+10. screws are too soft
+11. 
+
