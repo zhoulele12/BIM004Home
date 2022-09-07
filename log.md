@@ -135,6 +135,7 @@ print8, box bottom on B7
 
 print9, box top on B7
 1. ridge gap still needs to be narrowed. return to original.
+2. added text.
 
 After you finish, make a tolerance chart.
 
