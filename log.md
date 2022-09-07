@@ -128,7 +128,13 @@ print6, box top on B2
 1. button hole size good now!
 2. ridge gap overly-widened - gap narrowed by 0.05mm -> the problem seems to be the corner
 
+print8, box bottom on B7
+1. depth 15 just nice!
+2. length 16 just nice!
+3. mid-ridge gaps just nice!
 
+print9, box top on B7
+1. ridge gap still needs to be narrowed. return to original.
 
 After you finish, make a tolerance chart.
 
