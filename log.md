@@ -136,5 +136,13 @@ print8, box bottom on B7
 print9, box top on B7
 1. ridge gap still needs to be narrowed. return to original.
 
-After you finish, make a tolerance chart.
+print10, box top on B7, B7 now 0.4mm
+1. added texts. Look ok
+2. ridge too narrow (0.4mm might be the reason)
+
+servo-arm A3
+1. added base height by 3.5mm to accommodate for box.
+
+servo-arm
+1. further added base height by 0.5mm
 
