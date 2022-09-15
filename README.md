@@ -10,14 +10,15 @@ The new dorm came with a much older (and less automatic) door than the East Hous
 Thus, the unlocking mechanism of our fingerprint lock needs to be redesigned. Here I chose to remove the door knob entirely and design a component that binds the servo motor with the key hole. 
 
 ![key hole](util/key-hole.jpg)
-![3d-print](util/3d-print-design.jpg)
+![3d-print](util/3d-print-annotated.jpg)
 ![combined](util/combined.jpg)
 
 When the servo is mounted onto the door, our 3d-printed servo arm turns the lock using two forces: 1. the turning force at the end 2. the friction between two flat surfaces.
 
 Since now the original lock is covered with our lock box, a toggle switch is used to open/lock the door from the inside.
 
-![inside](util/inside.gif)
+![inside](util/inside-demo.gif)
+![outside](util/outside-demo.gif)
 
 State of the lock is now color-coded. Purple - locked. Grey - open. Blue - finger match. Red - no finger.
 
