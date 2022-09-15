@@ -4,6 +4,8 @@ This repo is for project BIM004Home, a SmartHome Hub designed for my dorm room.
 
 As of now, it only includes a fingerprint lock modified based on BIM001Print. More devices to come in the future!
 
+![outside](util/outside.gif)
+
 ## Major improvements from BIM001
 The new dorm came with a much older (and less automatic) door than the East House door. While the East house door opens and closes (plus locks) by simplying pulling the door handle, the Wannamaker door uses the traditional design of a door knob.
 
@@ -20,9 +22,9 @@ Since now the original lock is covered with our lock box, a toggle switch is use
 ![inside](util/inside.gif)
 
 State of the lock is now color-coded. Purple - locked. Grey - open. Blue - finger match. Red - no finger.
-![outside](util/outside.gif)
 
 The other major improvement from BIM001 is that no superglue is used in BIM004! All connections are secured using screws. 
+![inside](util/screw.jpg)
 
 
 
