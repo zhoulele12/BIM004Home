@@ -18,9 +18,9 @@ When the servo is mounted onto the door, our 3d-printed servo arm turns the lock
 Since now the original lock is covered with our lock box, a toggle switch is used to open/lock the door from the inside.
 
 ![inside](util/inside.gif)
-![outside](util/outside.gif)
 
 State of the lock is now color-coded. Purple - locked. Grey - open. Blue - finger match. Red - no finger.
+![outside](util/outside.gif)
 
 The other major improvement from BIM001 is that no superglue is used in BIM004! All connections are secured using screws. 
 
