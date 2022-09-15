@@ -11,7 +11,7 @@ Thus, the unlocking mechanism of our fingerprint lock needs to be redesigned. He
 
 ![key hole](util/key-hole.jpg)
 ![3d-print](util/3d-print-annotated.jpg)
-![combined](util/combined.jpg)
+![combined](util/combined-servo-arm.jpg)
 
 When the servo is mounted onto the door, our 3d-printed servo arm turns the lock using two forces: 1. the turning force at the end 2. the friction between two flat surfaces.
 
